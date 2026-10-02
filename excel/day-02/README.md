@@ -22,5 +22,8 @@
 - East order lines went from 2,848 to 2,847.
 - Fixing the dates and text did not change any Day 1 number, because none of them use those columns.
 
-## 5. One thing that confused me, and how I resolved it
+## 5. Space check
+- checked if product name has extra space in between using length of product name <> length of trimmed product name
+  
+## 6. One thing that confused me, and how I resolved it
 - Why excel read the date in wrong format and found that how excel works (read system regional date format) whereas file date format was in US date format
