@@ -10,7 +10,7 @@
 | Blank cells | 0 (checked with "COUNTBLANK") | None needed |
 | Garbled characters in Product Name | Broken quote marks and stray "Â" from a text encoding error | Replaced with straight quotes, and the stray "Â" removed. Searches for the leftover characters found nothing. |
 | Extra spaces in Product Name | None (checked with "LEN" vs "TRIM") | None needed |
-| Dates | 4,042 Order Dates were real dates with day and month swapped. 5,951 were text. | Built corrected date columns for Order Date and Ship Date |
+| Dates | 4,042 Order Dates were real dates with day and month swapped. 5,951 were text. | Copied Order Date and Ship Date into new columns and converted them with Text to Columns (MDY) |
 
 ## 3. How I validated the dates
 - The largest "day" among the real dates was 12, which showed that they were read in the wrong order.
