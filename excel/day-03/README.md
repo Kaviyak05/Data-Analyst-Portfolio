@@ -28,4 +28,5 @@
 - The four band profit totals add up to the Total Profit.
 
 ## 5. One thing that confused me, and how I resolved it
-- using COUNTIFS confused me since we have to use the criteria like text now understood it
+- What confused you: why "<0" needs quotes in COUNTIFS, when [@Profit]<0 in an IF formula has none.
+- How you resolved it: COUNTIFS reads the criteria as a small piece of text and splits it into the comparison sign and the number. IF evaluates the comparison directly.
